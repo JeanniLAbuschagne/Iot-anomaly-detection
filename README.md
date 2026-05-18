@@ -175,22 +175,4 @@ iot-anomaly-detection/
     └── api.log                 # API request logs
 ```
 
----
 
-## Answers to Module Questions
-
-**What were the challenges of integrating a predictive model into an application or service?**
-Key challenges include serialisation/deserialisation of the model, ensuring feature scaling consistency between training and inference, managing model versioning, and handling malformed input gracefully.
-
-**What are the constraints of implementing a predictive model as a service?**
-Latency requirements for real-time predictions, memory footprint of the loaded model, concurrent request handling, and ensuring the API remains available under load.
-
-**Which requirements for data acquisition, storage, and processing had to be met?**
-Data must be ingested continuously (stream), validated for correct schema, scaled using the same parameters as training, and predictions must be returned in milliseconds.
-
-**What are monitoring components required for reliable execution?**
-Prediction latency tracking, error rate monitoring, anomaly rate trends (to detect model drift), health checks, structured logging, and a dashboard for human oversight.
-
----
-
-*IU International University of Applied Sciences*
